@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     is_burger: DataTypes. BOOLEAN
   }, {});
   Products.associate = function(models) {
-    // associations can be defined here
+    Products.hasMany(models.Products_x_order)
   };
   return Products;
 };
