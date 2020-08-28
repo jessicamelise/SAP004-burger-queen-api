@@ -8,17 +8,14 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      is_active: {
-        type: Sequelize.BOOLEAN
-      },
       table: {
         type: Sequelize.INTEGER
       },
       client: {
         type: Sequelize.STRING
       },
-      waiter: {
-        type: Sequelize.STRING
+      items: {
+        type: Sequelize.VIRTUAL
       },
       createdAt: {
         allowNull: false,

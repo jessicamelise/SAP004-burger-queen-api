@@ -7,7 +7,9 @@ module.exports = (sequelize, DataTypes) => {
     is_burger: DataTypes. BOOLEAN
   }, {});
   Products.associate = function(models) {
-    Products.hasMany(models.Products_x_order)
+    Products.hasMany(models.Products_x_order, {
+      foreignKey: 'productId'
+    })
   };
   return Products;
 };

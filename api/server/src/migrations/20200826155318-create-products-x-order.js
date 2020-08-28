@@ -8,24 +8,15 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      product_id: {
+      productId: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {model:'Products', key:'id'}
       },
-      order_id: {
+      orderId: {
         allowNull: false,
         type: Sequelize.INTEGER,
         references: {model:'Orders', key:'id'}
-      },
-      amount: {
-        type: Sequelize.INTEGER
-      },
-      add_extra: {
-        type: Sequelize.BOOLEAN,
-      },
-      type_protein: {
-        type: Sequelize.BOOLEAN,
       },
       createdAt: {
         allowNull: false,
